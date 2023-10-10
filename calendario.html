@@ -1,170 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <style>
-        table{
+  <style>
+    .calendario {
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 10px;
+      height: 385px;
+      width: 350px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 5);
+      margin-right: 25px;
+    }
 
-            border: 1px solid black;
-            border-radius: 15px;
-            border-collapse:separate; 
-            border-spacing: 0;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 5);
-            
-            
-        }
-        td{
-           
-            
-            padding: 20px;
-           
-        }
-       .letraL{
-        color: white;
-        border-radius: 40px;
-        border: 4px solid black;
-        background-color:black;
-        }
+    td {
+      text-align: center;
+      height: 48px;
+      width: 50px;
 
-        .letraM{
-        color: white;
-        border-radius: 30px;
-        border: 2px solid black;
-        background-color:black;
-        }
-      
-        .letraX{
-        color: white;
-        border-radius: 30px;
-        border: 2px solid black;
-        background-color:black;
-        }
+    }
 
-        .letraJ{
-        color: white;
-        border-radius: 30px;
-        border: 2px solid black;
-        background-color:black;
-        }
+    .letra {
+      color: white;
+      border-radius: 30px;
+      border: 2px solid black;
+      background-color: black;
+    }
 
-        .letraV{
-        color: white;
-        border-radius: 30px;
-        border: 2px solid black;
-        background-color:black;
-        }
+    .numero11 {
+      color: black;
+      border-radius: 30px;
+      border: 2px solid rgb(148, 109, 179);
+      background-color: rgb(148, 109, 179);
 
-        .letraS{
-        color: white;
-        border-radius: 30px;
-        border: 2px solid black;
-        background-color:black;
-        }
-        .letraD{
-        color: white;
-        border-radius: 30px;
-        border: 2px solid black;
-        background-color:black;
-        
-        
-        }
+    }
 
-        .numero11{
-        color: black;
-        border-radius: 30px;
-        border: 2px solid rgb(148, 109, 179);
-        background-color:rgb(148, 109, 179);
-        
-        }
-        .numero29{
-        color: black;
-        border-radius: 30px;
-        border: 2px solid rgb(243, 84, 243);
-        background-color:rgb(243, 84, 243);
-        
-        }
-        .Fnacional{
-          color: rgb(34, 214, 34);
-        }
-        
+    .numero29 {
+      color: black;
+      border-radius: 30px;
+      border: 2px solid rgb(243, 84, 243);
+      background-color: rgb(243, 84, 243);
 
-       </style>
+    }
+    .numero12{
+      color: black;
+      border-radius: 30px;
+      border: 2px solid rgb(46, 199, 122);
+      background-color: rgb(46, 199, 122);
+    }
+    .numero31{
+      color: black;
+      border-radius: 30px;
+      border: 2px solid rgb(167, 216, 34);
+      background-color: rgb(167, 216, 34);
+    }
 
-    <meta charset="UTF-8">
-    
-    <title>Document</title>
+    .Fnacional {
+      color: rgb(34, 214, 34);
+    }
+
+    .calendarios {
+      /*border: 5px solid blue;*/
+
+      display: flex;
+
+    }
+
+    .meses {
+      /*border: 5px solid red;*/
+      display: flex;
+    }
+
+    .festius {
+      border: 1px solid greenyellow;
+      display: flex;
+      margin-right: 40px;
+
+    }
+
+    .meses p {
+      margin-right: 85px;
+    }
+
+    .meses p:nth-child(1) {
+      color: rgb(141, 216, 29);
+    }
+
+    .meses p:nth-child(2) {
+      color: rgb(144, 99, 196);
+    }
+
+    .meses p:nth-child(3) {
+      color: rgb(255, 47, 255);
+    }
+
+    .meses p:nth-child(4) {
+      color: rgb(212, 250, 44);
+    }
+  </style>
+
+  <meta charset="UTF-8">
+
+  <title>Document</title>
 </head>
 
 <body>
-  <p class="Fnacional">Festiu Nacional</p>
-  <p class="Fregional">Fistiu Regional</p>
+  <div class="meses">
 
-   <table >
+    <p>Festiu Nacional</p>
+    <p>Fistiu Regional</p>
+    <p>Fistiu Local</p>
+    <p>Fistiu Centre</p>
+
+  </div>
+
+
+  <div class="calendarios">
+    <!-- inicio tabla 1 -->
+    <div class="calendario">
+      <b>Septiembre</b>
+      <table>
+
+        <tr>
+
+          <td class="letra"><b>L</b></td>
+          <td class="letra"><b>M</b></td>
+          <td class="letra"><b>X</b></td>
+          <td class="letra"><b>J</b></td>
+          <td class="letra"><b>V</b></td>
+          <td class="letra"><b>S</b></td>
+          <td class="letra"><b>D</b></td>
+        </tr>
+        <tr>
+
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td class="numero11"><b>11</b></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+        </tr>
+
+        <tr>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+        </tr>
+
+        <tr>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td class="numero29"><b>29</b></td>
+          <td>30</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <!-- fin tabla 1 -->
+
+    <!-- inicio tabla 1 -->
+    <div class="calendario">
+      <b>Octubre</b>
+      <table>
+
+        <tr>
+
+          <td class="letra"><b>L</b></td>
+          <td class="letra"><b>M</b></td>
+          <td class="letra"><b>X</b></td>
+          <td class="letra"><b>J</b></td>
+          <td class="letra"><b>V</b></td>
+          <td class="letra"><b>S</b></td>
+          <td class="letra"><b>D</b></td>
+        </tr>
+        <tr>
+
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>11</td>
+          <td class="numero12"><b>12</b></td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+        </tr>
+
+        <tr>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+        </tr>
+
+        <tr>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td class="numero31"><b>31</b></td>
+        </tr>
+      </table>
+    </div>
+    <!-- fin tabla 1 -->
+  </div>
     
-    <tr>
-      <td colspan="7"><b>Septiembre</b></td>
-    </tr>
-
-    <tr>
-      
-     
-      
-    <td class="letraL"><b>L</b></td>
-      <td class="letraM"><b>M</b></td>
-      <td class="letraX"><b>X</b></td>
-      <td class="letraJ"><b>J</b></td>
-      <td class="letraV"><b>V</b></td>
-      <td class="letraS"><b>S</b></td>
-      <td class="letraD"><b>D</b></td>
-      </tr>
-      <tr>
-
-        <td ></td>
-        <td ></td>
-        <td ></td>
-        <td >1</td>
-        <td >2</td>
-        <td >3</td>
-        <td >4</td>
-      </tr>
-      <tr>
-        <td >5</td>
-        <td >6</td>
-        <td >7</td>
-        <td >8</td>
-        <td >9</td>
-        <td >10</td>
-        <td class="numero11"><b>11</b></td>
-      </tr>
-      <tr>
-        <td >12</td>
-        <td >13</td>
-        <td >14</td>
-        <td >15</td>
-        <td >16</td>
-        <td >17</td>
-        <td >18</td>
-      </tr>
-
-      <tr>
-        <td >19</td>
-        <td>20</td>
-        <td >21</td>
-        <td >22</td>
-        <td >23</td>
-        <td >24</td>
-        <td >25</td>
-      </tr>
-
-      <tr>
-        <td >26</td>
-        <td>27</td>
-        <td >28</td>
-        <td class="numero29"><b>11</b></td>
-        <td >30</td>
-        <td ></td>
-        <td ></td>
-      </tr>
-   </table>
-   
 </body>
+
 </html>
